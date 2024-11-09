@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Warming Crisis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#data" class="nav-link">Data</a>
+            <a href="#causes" class="nav-link">Causes</a>
+            <a href="#effects" class="nav-link">Effects</a>
+            <a href="#solutions" class="nav-link">Solutions</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <div class="parallax-container" id="home">
+        <div class="parallax-bg"></div>
+        <div class="climate-particles" id="particles"></div>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Global Warming Crisis</h1>
+                <p class="hero-subtitle">Our Planet's Temperature is Rising at an Alarming Rate</p>
+                <div class="action-buttons">
+                    <a href="#causes" class="action-button primary">Understand the Causes</a>
+                    <a href="#solutions" class="action-button secondary">Explore Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="data" class="data-section">
+        <div class="container">
+            <h2>Global Temperature and Emissions Data</h2>
+            <div class="charts-container">
+                <div class="chart-wrapper">
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="emissionsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="causes" class="info-section">
+        <div class="container">
+            <h2>Causes of Global Warming</h2>
+            <p>Global warming is primarily caused by human activities that release greenhouse gases into the atmosphere, trapping heat and causing the Earth's temperature to rise. The main culprits are:</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=800&q=80" alt="Greenhouse Gases">
+                    <div class="card-content">
+                        <h3>Greenhouse Gas Emissions</h3>
+                        <p>The burning of fossil fuels for transportation, electricity generation, and industrial processes releases large amounts of CO2 and other greenhouse gases.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Greenhouse_gas_emissions">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://facts.net/wp-content/uploads/2021/11/illegal-deforestation.jpg" alt="Deforestation">
+                    <div class="card-content">
+                        <h3>Deforestation</h3>
+                        <p>The loss of forests, which act as carbon sinks, reduces the Earth's capacity to absorb CO2 from the atmosphere.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Deforestation">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1471958680802-1345a694ba6d?auto=format&fit=crop&w=800&q=80" alt="Industrial Activities">
+                    <div class="card-content">
+                        <h3>Industrial Activities</h3>
+                        <p>Manufacturing processes and various industrial activities release significant amounts of greenhouse gases, including methane and nitrous oxide.</p>
+                        <button><a href="https://www.toppr.com/guides/geography/industries/introduction-to-industry/">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80" alt="Agricultural Practices">
+                    <div class="card-content">
+                        <h3>Agricultural Practices</h3>
+                        <p>Modern farming techniques, such as livestock production and the use of fertilizers, contribute to greenhouse gas emissions.</p>
+                        <button><a href="https://www.embibe.com/exams/agricultural-practices/">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="effects" class="info-section dark">
+        <div class="container">
+            <h2>Effects of Global Warming</h2>
+            <p>As the Earth's temperature continues to rise, we are witnessing a range of severe and far-reaching consequences:</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=800&q=80" alt="Rising Sea Levels">
+                    <div class="card-content">
+                        <h3>Rising Sea Levels</h3>
+                        <p>Melting polar ice and glaciers are causing sea levels to rise, threatening coastal communities and low-lying islands.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Sea_level_rise">Learn More</a></button>
+        
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format&fit=crop&w=800&q=80" alt="Extreme Weather">
+                    <div class="card-content">
+                        <h3>Extreme Weather</h3>
+                        <p>The increased frequency and intensity of hurricanes, droughts, wildfires, and other extreme weather events are causing widespread destruction.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Extreme_weather">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80" alt="Loss of Biodiversity">
+                    <div class="card-content">
+                        <h3>Loss of Biodiversity</h3>
+                        <p>Many species are facing extinction due to habitat changes and the disruption of delicate ecosystems.</p>
+                     <button><a href="https://en.wikipedia.org/wiki/Biodiversity_loss">Learn More</a></button>
+            
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Health Risks">
+                    <div class="card-content">
+                        <h3>Health Risks</h3>
+                        <p>The impacts of global warming, such as heat waves and the spread of infectious diseases, pose serious threats to human health and well-being.</p>
+                        <button><a href="https://www.healthdata.org/research-analysis/health-risks-issues">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="info-section">
+        <div class="container">
+            <h2>Solutions to Combat Global Warming</h2>
+            <p>There are numerous ways individuals, communities, and governments can take action to mitigate the effects of climate change:</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <img src="https://driivz.com/wp-content/uploads/2021/03/Renewable_EV_charging.jpg" alt="Renewable Energy">
+                    <div class="card-content">
+                        <h3>Renewable Energy</h3>
+                        <p>Transitioning to renewable energy sources, such as solar, wind, and hydropower, can significantly reduce greenhouse gas emissions.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Renewable_energy">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.KK9AL5RE9xM1LI_s7gSiHwHaE7&pid=Api&P=0&h=180" alt="Energy Efficiency">
+                    <div class="card-content">
+                        <h3>Energy Efficiency</h3>
+                        <p>Improving energy efficiency in buildings, transportation, and industry can decrease energy consumption and lower emissions.</p>
+                        <button><a href="https://www.iea.org/energy-system/energy-efficiency-and-demand/energy-efficiency">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80" alt="Reforestation">
+                    <div class="card-content">
+                        <h3>Reforestation</h3>
+                        <p>Planting trees and restoring forests can help capture and store atmospheric carbon, while also preserving biodiversity.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Reforestation">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://assets.solar.com/wp-content/uploads/2019/06/pkms-blog-sustainable-living.jpg" alt="Sustainable Lifestyle">
+                    <div class="card-content">
+                        <h3>Sustainable Lifestyle</h3>
+                        <p>Adopting eco-friendly habits, such as reducing waste, using public transportation, and consuming less, can contribute to lowering individual carbon footprints.</p>
+                        <button><a href="https://en.wikipedia.org/wiki/Sustainable_living">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2>Explore Our Resources</h2>
+            <p>Check out these informative resources to learn more about global warming and how you can take action:</p>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <img src="http://rva.gov/sites/default/files/inline-images/emissions%20sources_0.png" alt="Resource Image">
+                    <h3>Climate Change Basics</h3>
+                    <p>Understand the science behind global warming and its causes.</p>
+                    <a href="https://geo.libretexts.org/Bookshelves/Meteorology_and_Climate_Science/Biochemistry_and_Climate_Change/01%3A_The_Basics_of_Climate_Change" class="resource-link">Learn More</a>
+                </div>
+                <div class="resource-card">
+                    <img src="https://batxenergies.com/wp-content/uploads/2022/06/How-can-you-reduce-your-carbon-footprint-without-compromising-on-your-lifestyle-needs.jpg" alt="Resource Image">
+                    <h3>Reducing Your Carbon Footprint</h3>
+                    <p>Discover practical steps to lower your environmental impact.</p>
+                    <a href="https://www.bbc.com/news/science-environment-52719662" class="resource-link">Learn More</a>
+                </div>
+                <div class="resource-card">
+                    <img src="https://www.researchgate.net/profile/Mohammad-Bhuyan-7/publication/312589649/figure/fig1/AS:453175116341248@1485056775425/Categories-of-government-initiatives-and-policy-support.png" alt="Resource Image">
+                    <h3>Government Policies and Initiatives</h3>
+                    <p>Explore the role of governments in addressing climate change.</p>
+                    <a href="https://www.worldbank.org/en/news/feature/2023/09/19/climate-policies-with-real-world-results" class="resource-link">Learn More</a>
+                </div>
+                <div class="resource-card">
+                    <img src="https://nolisoli.ph/wp-content/uploads/2020/08/Youth-Climate-Activists.jpg" alt="Resource Image">
+                    <h3>Climate Change Activism</h3>
+                    <p>Get involved in the global movement to fight climate change.</p>
+                    <a href="https://www.bbc.com/news/science-environment-67521051" class="resource-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a group of passionate individuals dedicated to raising awareness and driving action on the global warming crisis. Our mission is to educate, inspire, and empower people to take meaningful steps to combat climate change.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>John Doe</h3>
+                    <p>Co-Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>Jane Smith</h3>
+                    <p>Co-Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>Michael Johnson</h3>
+                    <p>Lead Researcher</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>Emily Davis</h3>
+                    <p>Outreach Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a question, suggestion, or want to get involved? We'd love to hear from you!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Create particles
+    function createParticles() {
+        const container = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 3 + 's';
+            container.appendChild(particle);
+        }
+    }
+
+    // Initialize particles
+    createParticles();
+
+    // Parallax effect
+    const parallaxBg = document.querySelector('.parallax-bg');
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        parallaxBg.style.transform = 'translateY(${scrolled * 0.5}px)';
+    });
+
+    // Navigation scroll effect
+    const nav = document.querySelector('.main-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            nav.style.background = 'rgba(0, 0, 0, 0.9)';
+            nav.style.padding = '0.5rem 1rem';
+        } else {
+            nav.style.background = 'rgba(0, 0, 0, 0.8)';
+            nav.style.padding = '1rem';
+        }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Initialize Charts
+    const temperatureCtx = document.getElementById('temperatureChart').getContext('2d');
+    new Chart(temperatureCtx, {
+        type: 'line',
+        data: {
+            labels: ['1880', '1900', '1920', '1940', '1960', '1980', '2000', '2020'],
+            datasets: [{
+                label: 'Temperature Anomaly (°C)',
+                data: [-0.16, -0.09, -0.27, 0.12, 0.03, 0.26, 0.39, 0.98],
+                borderColor: 'rgb(239, 68, 68)',
+                backgroundColor: 'rgba(239, 68, 68, 0.5)',
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: { color: 'white' }
+                },
+                title: {
+                    display: true,
+                    text: 'Global Temperature Anomaly',
+                    color: 'white'
+                }
+            },
+            scales: {
+                y: {
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    ticks: { color: 'white' }
+                },
+                x: {
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    ticks: { color: 'white' }
+                }
+            }
+        }
+    });
+
+    const emissionsCtx = document.getElementById('emissionsChart').getContext('2d');
+    new Chart(emissionsCtx, {
+        type: 'bar',
+        data: {
+            labels: ['1950', '1970', '1990', '2000', '2010', '2020'],
+            datasets: [{
+                label: 'CO₂ Emissions (billion tonnes)',
+                data: [6, 15, 22, 25, 33, 36],
+                backgroundColor: 'rgba(34, 197, 94, 0.6)'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: { color: 'white' }
+                },
+                title: {
+                    display: true,
+                    text: 'Global CO₂ Emissions',
+                    color: 'white'
+                }
+            },
+            scales: {
+                y: {
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    ticks: { color: 'white' }
+                },
+                x: {
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    ticks: { color: 'white' }
+                }
+            }
+        }
+    });
+
+    // Facts Carousel
+    const facts = document.querySelectorAll('.fact-slide');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    let currentFact = 0;
+
+    // Create dots
+    facts.forEach((_, index) => {
+        const dot = document.createElement('div');
+       
+        dot.className = `dot ${index === 0 ? 'active' : ''}`;
+
+        dot.addEventListener('click', () => showFact(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    function showFact(index) {
+        facts[currentFact].classList.remove('active');
+        document.querySelectorAll('.dot')[currentFact].classList.remove('active');
+        
+        currentFact = index;
+        facts[currentFact].classList.add('active');
+        document.querySelectorAll('.dot')[currentFact].classList.add('active');
+    }
+
+    // Auto-advance carousel
+    setInterval(() => {
+        showFact((currentFact + 1) % facts.length);
+    }, 5000);
+
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    // Observe all info cards
+    document.querySelectorAll('.info-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.transition = 'all 0.5s ease-out';
+        observer.observe(card);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Create particles
+    // ... (previous JavaScript code) ...
+
+    // Smooth scrolling for navigation links
+    // ... (previous JavaScript code) ...
+
+    // Initialize Charts
+    // ... (previous JavaScript code) ...
+
+    // Facts Carousel
+    // ... (previous JavaScript code) ...
+
+    // Intersection Observer for animations
+    // ... (previous JavaScript code) ...
+
+    // Sliding tabs
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            tab.style.width = '200px';
+        });
+    });
+
+    // Carbon footprint calculator
+    const footprintForm = document.querySelector('.footprint-form');
+    footprintForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const miles = document.getElementById('miles').value;
+        const household = document.getElementById('household').value;
+        const result = calculateFootprint(miles, household);
+        alert('Your estimated carbon footprint is ${result} tonnes of CO2 per year.');
+    });
+
+    function calculateFootprint(miles, household) {
+        // Implement the carbon footprint calculation logic here
+        return (miles * 0.4 + household * 2.2).toFixed(2);
+    }
+
+    // Scroll Reveal Animation
+    ScrollReveal().reveal('.info-card', { delay: 200 });
+    ScrollReveal().reveal('.team-member', { delay: 200 });
+    ScrollReveal().reveal('.resource-card', { delay: 200 });
+    ScrollReveal().reveal('.contact-form', { delay: 200 });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (previous JavaScript code) ...
+
+    // Carbon footprint calculator
+    const footprintForm = document.querySelector('.footprint-form');
+    const resultContainer = document.querySelector('.result-container .result');
+
+    footprintForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const miles = document.getElementById('miles').value;
+        const household = document.getElementById('household').value;
+        const result = calculateFootprint(miles, household);
+        resultContainer.textContent =' Your estimated carbon footprint is ${result} tonnes of CO2 per year.';
+    });
+
+    function calculateFootprint(miles, household) {
+        // Implement the carbon footprint calculation logic here
+        return (miles * 0.4 + household * 2.2).toFixed(2);
+    }
+});
+
+
+
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #111827, #1f2937);
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation */
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.parallax-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff4d4d, #ff8c1a, #ff4d4d, #ff8c1a);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.climate-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: float 3s infinite;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 2rem;
+    animation: fadeInUp 1s forwards;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(255, 77, 77, 0.8);
+    animation: burning 2s infinite;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.action-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.action-button.primary {
+    background: rgba(239, 68, 68, 0.8);
+    color: white;
+}
+
+.action-button.secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.action-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Data Section */
+.data-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.chart-wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* Info Sections */
+.info-section {
+    padding: 6rem 0;
+}
+
+.info-section.dark {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.info-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Facts Section */
+.facts-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.facts-carousel {
+    position: relative;
+    height: 300px;
+    margin-top: 3rem;
+}
+
+.fact-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fact-slide.active {
+    opacity: 1;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* Action Section */
+.action-section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+/* Animations */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes burning {
+    0% { text-shadow: 0 0 20px #ff4d4d; }
+    50% { text-shadow: 0 0 40px #ff4d4d; }
+    100% { text-shadow: 0 0 20px #ff4d4d; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+
+/* Base Styles */
+/* ... (previous CSS code) ... */
+
+/* Resources Section */
+.resources-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.resource-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.resource-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.resource-link {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.resource-link:hover {
+    color: #16a34a;
+}
+
+/* About Section */
+.about-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: white;
+    resize: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+
+/* ... (previous CSS code) ... */
+
+/* Carbon Footprint Calculator Section */
+.calculator-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footprint-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.calculate-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calculate-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+.result-container {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+/* Base Styles */
+/* ... (previous CSS code) ... */
+
+/* Calculator Section */
+.calculator-section {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footprint-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.calculate-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calculate-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+.result-container {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+/* Additional Sections */
+.info-section.dark p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.info-section.dark .info-card {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.info-section.dark .info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.action-section {
+    padding: 6rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.action-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.action-section p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
