@@ -1,3 +1,4 @@
+HTML CODE:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -256,15 +257,9 @@
 </body>
 </html>
 
-
-
-
-
-
-
-
+JAVA SCRIPT:
 document.addEventListener('DOMContentLoaded', () => {
-    // Create particles
+    
     function createParticles() {
         const container = document.getElementById('particles');
         for (let i = 0; i < 50; i++) {
@@ -277,17 +272,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Initialize particles
+    
     createParticles();
 
-    // Parallax effect
+    
     const parallaxBg = document.querySelector('.parallax-bg');
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         parallaxBg.style.transform = 'translateY(${scrolled * 0.5}px)';
     });
 
-    // Navigation scroll effect
+    
     const nav = document.querySelector('.main-nav');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
@@ -299,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Smooth scrolling for navigation links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -309,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize Charts
+    
     const temperatureCtx = document.getElementById('temperatureChart').getContext('2d');
     new Chart(temperatureCtx, {
         type: 'line',
@@ -384,12 +379,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Facts Carousel
+   
     const facts = document.querySelectorAll('.fact-slide');
     const dotsContainer = document.querySelector('.carousel-dots');
     let currentFact = 0;
 
-    // Create dots
+    
     facts.forEach((_, index) => {
         const dot = document.createElement('div');
        
@@ -408,12 +403,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.dot')[currentFact].classList.add('active');
     }
 
-    // Auto-advance carousel
+    
     setInterval(() => {
         showFact((currentFact + 1) % facts.length);
     }, 5000);
 
-    // Intersection Observer for animations
+    
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach(entry => {
@@ -426,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { threshold: 0.1 }
     );
 
-    // Observe all info cards
+    
     document.querySelectorAll('.info-card').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(50px)';
@@ -436,22 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Create particles
-    // ... (previous JavaScript code) ...
-
-    // Smooth scrolling for navigation links
-    // ... (previous JavaScript code) ...
-
-    // Initialize Charts
-    // ... (previous JavaScript code) ...
-
-    // Facts Carousel
-    // ... (previous JavaScript code) ...
-
-    // Intersection Observer for animations
-    // ... (previous JavaScript code) ...
-
-    // Sliding tabs
+   
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -461,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Carbon footprint calculator
+    
     const footprintForm = document.querySelector('.footprint-form');
     footprintForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -472,7 +452,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function calculateFootprint(miles, household) {
-        // Implement the carbon footprint calculation logic here
+        
         return (miles * 0.4 + household * 2.2).toFixed(2);
     }
 
@@ -484,9 +464,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (previous JavaScript code) ...
-
-    // Carbon footprint calculator
+   
     const footprintForm = document.querySelector('.footprint-form');
     const resultContainer = document.querySelector('.result-container .result');
 
@@ -499,15 +477,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function calculateFootprint(miles, household) {
-        // Implement the carbon footprint calculation logic here
+        
         return (miles * 0.4 + household * 2.2).toFixed(2);
     }
 });
 
 
 
+CSS:
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -658,7 +636,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Data Section */
+
 .data-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
@@ -678,7 +656,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* Info Sections */
+
 .info-section {
     padding: 6rem 0;
 }
@@ -720,7 +698,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* Facts Section */
+
 .facts-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
@@ -794,7 +772,7 @@ body {
     box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
 }
 
-/* Animations */
+
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -823,7 +801,7 @@ body {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;
@@ -843,10 +821,9 @@ body {
 }
 
 
-/* Base Styles */
-/* ... (previous CSS code) ... */
 
-/* Resources Section */
+
+
 .resources-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
@@ -892,7 +869,7 @@ body {
     color: #16a34a;
 }
 
-/* About Section */
+
 .about-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
@@ -936,7 +913,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Contact Section */
+
 .contact-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
@@ -982,9 +959,9 @@ body {
 }
 
 
-/* ... (previous CSS code) ... */
 
-/* Carbon Footprint Calculator Section */
+
+
 .calculator-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
@@ -1043,10 +1020,7 @@ body {
     color: #22c55e;
 }
 
-/* Base Styles */
-/* ... (previous CSS code) ... */
 
-/* Calculator Section */
 .calculator-section {
     padding: 6rem 0;
     background: rgba(0, 0, 0, 0.5);
